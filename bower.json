@@ -12,7 +12,8 @@
     "node_modules",
     "bower_components",
     "src",
-    "spec"
+    "spec",
+    "tmp"
   ],
   "dependencies": {
     "bootstrap": "^3.1.1",

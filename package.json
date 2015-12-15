@@ -4,7 +4,7 @@
   "description": "AngularJS alert drawer component",
   "main": "lib/alert-drawer.js",
   "scripts": {
-    "test": "./node_modules/.bin/grunt karma",
+    "test": "./node_modules/.bin/grunt karma:all",
     "prepublish": "./node_modules/.bin/grunt"
   },
   "repository": {

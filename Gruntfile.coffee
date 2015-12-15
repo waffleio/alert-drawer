@@ -6,8 +6,9 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-less'
   grunt.loadNpmTasks 'grunt-bump'
   grunt.loadNpmTasks 'grunt-angular-templates'
+  grunt.loadNpmTasks 'grunt-contrib-concat'
 
-  grunt.registerTask 'default', ['clean', 'coffee', 'less', 'ngtemplates']
+  grunt.registerTask 'default', ['clean', 'coffee', 'less', 'ngtemplates', 'concat']
 
   grunt.initConfig
 
@@ -22,7 +23,7 @@ module.exports = (grunt) ->
         expand: true
         cwd: 'src'
         src: ['**/*.coffee']
-        dest: 'dist'
+        dest: 'tmp'
         ext: '.js'
 
     less:
@@ -46,6 +47,11 @@ module.exports = (grunt) ->
       app:
         cwd: 'templates'
         src: '**/*.html'
-        dest: 'dist/templates.js'
+        dest: 'tmp/templates.js'
         options:
           module: 'alertDrawer'
+
+    concat:
+      dist:
+        src: ['tmp/**.js'],
+        dest: 'dist/alert-drawer.js'
