@@ -1,6 +1,6 @@
 {
   "name": "alert-drawer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "AngularJS alert drawer component",
   "main": "lib/alert-drawer.js",
   "scripts": {
