@@ -1,0 +1,42 @@
+{
+  "name": "alert-drawer",
+  "version": "0.0.1",
+  "description": "AngularJS alert drawer component",
+  "main": "lib/alert-drawer.js",
+  "scripts": {
+    "test": "./node_modules/.bin/grunt karma",
+    "prepublish": "./node_modules/.bin/grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waffleio/alert-drawer.git"
+  },
+  "author": "Waffle.io <support@waffle.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/waffleio/alert-drawer/issues"
+  },
+  "homepage": "https://github.com/waffleio/alert-drawer#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.7.1",
+    "chai": "^3.4.1",
+    "coffee-script": "^1.10.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-contrib-less": "^1.1.0",
+    "grunt-karma": "^0.12.1",
+    "karma": "^0.13.15",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-coffee-preprocessor": "^0.3.0",
+    "karma-mocha": "^0.2.1",
+    "karma-ng-html2js-preprocessor": "^0.2.0",
+    "karma-sinon": "^1.0.4",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0"
+  }
+}

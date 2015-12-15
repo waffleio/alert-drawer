@@ -1,0 +1,25 @@
+{
+  "name": "alert-drawer",
+  "description": "AngularJS alert drawer component",
+  "main": "lib/alert-drawer.js",
+  "authors": [
+    "Waffle.io <support@waffle.io>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/waffleio/alert-drawer",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "spec"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8",
+    "angular-mocks": "~1.4.8",
+    "jquery": "~2.1.4",
+    "font-awesome": "~4.5.0",
+    "angular-sanitize": "~1.4.8"
+  }
+}
