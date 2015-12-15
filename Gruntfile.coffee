@@ -5,8 +5,9 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-karma'
   grunt.loadNpmTasks 'grunt-contrib-less'
   grunt.loadNpmTasks 'grunt-bump'
+  grunt.loadNpmTasks 'grunt-angular-templates'
 
-  grunt.registerTask 'default', ['clean', 'coffee', 'less']
+  grunt.registerTask 'default', ['clean', 'coffee', 'less', 'ngtemplates']
 
   grunt.initConfig
 
@@ -40,3 +41,11 @@ module.exports = (grunt) ->
         configFile: 'karma.conf.coffee'
         autoWatch: true
         singleRun: false
+
+    ngtemplates:
+      app:
+        cwd: 'templates'
+        src: '**/*.html'
+        dest: 'dist/templates.js'
+        options:
+          module: 'alertDrawer'
