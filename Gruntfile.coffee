@@ -4,10 +4,15 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-karma'
   grunt.loadNpmTasks 'grunt-contrib-less'
+  grunt.loadNpmTasks 'grunt-bump'
 
   grunt.registerTask 'default', ['clean', 'coffee', 'less']
 
   grunt.initConfig
+
+    bump:
+        options:
+          pushTo: 'origin'
 
     clean: ['dist']
 
