@@ -1,4 +1,5 @@
 # alert-drawer
+![codeship](https://codeship.com/projects/3474d010-850d-0133-cc52-3ac20bd54ece/status?branch=master)
 
 A simple AngularJS (1.x) module for displaying alerts.
 
