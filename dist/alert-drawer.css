@@ -1,0 +1,81 @@
+.alert-drawer {
+  height: 40px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  margin-left: -275px;
+  min-width: 550px;
+  z-index: 2000;
+  color: white;
+  line-height: 40px;
+  font-size: 18px;
+  overflow: hidden;
+  transition-property: top;
+  transition-duration: 300ms;
+}
+.alert-drawer.slide {
+  top: 0;
+}
+.alert-drawer.success {
+  background-color: #7fcc3c;
+}
+.alert-drawer.success .dismiss {
+  background-color: #649e23;
+}
+.alert-drawer.info,
+.alert-drawer.processing {
+  background-color: #1781d8;
+}
+.alert-drawer.info .dismiss,
+.alert-drawer.processing .dismiss {
+  background-color: #1265aa;
+}
+.alert-drawer.danger {
+  background-color: #c43027;
+}
+.alert-drawer.danger .dismiss {
+  background-color: #a32920;
+}
+.alert-drawer.warning {
+  background-color: #F0AD4E;
+}
+.alert-drawer.warning .dismiss {
+  background-color: #ec971f;
+}
+.alert-drawer .message {
+  padding-right: 50px;
+}
+.alert-drawer .message a {
+  text-decoration: none;
+}
+.alert-drawer .message a:hover {
+  text-decoration: underline;
+}
+.alert-drawer .message a.underline {
+  text-decoration: underline;
+}
+.alert-drawer .message i {
+  margin: 0 4px 0 12px;
+}
+.alert-drawer .dismiss {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.alert-drawer .dismiss:link,
+.alert-drawer .dismiss:hover,
+.alert-drawer .dismiss:visited {
+  color: white;
+  text-decoration: none;
+}
+.alert-drawer .dismiss:before {
+  font-family: 'FontAwesome';
+  content: '\f00d';
+}
+.alert-drawer a {
+  color: white;
+  text-decoration: underline;
+}
