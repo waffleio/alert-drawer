@@ -5,6 +5,7 @@
   "main": "lib/alert-drawer.js",
   "scripts": {
     "test": "./node_modules/.bin/grunt karma:all",
+    "postinstall": "./node_modules/.bin/bower install",
     "prepublish": "./node_modules/.bin/grunt"
   },
   "repository": {
